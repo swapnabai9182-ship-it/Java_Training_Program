@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class NumberCheck {
+    public static void main(String[] args) {
+        // Create a Scanner object to read user input
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter any number: ");
+        double number = scanner.nextDouble();
+
+        // Decision-making logic
+        if (number > 0) {
+            System.out.println(number + " is a positive number.");
+        } else if (number < 0) {
+            System.out.println(number + " is a negative number.");
+        } else {
+            System.out.println("The number is zero.");
+        }
+
+        scanner.close();
+    }
+}
