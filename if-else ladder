@@ -1,0 +1,36 @@
+public class DecisionMakingDemo {
+    public static void main(String[] args) {
+        int score = 85;
+        char grade;
+
+        // 1. if-else-if ladder to determine the letter grade
+        if (score >= 90) {
+            grade = 'A';
+        } else if (score >= 80) {
+            grade = 'B';
+        } else if (score >= 70) {
+            grade = 'C';
+        } else {
+            grade = 'F';
+        }
+
+        System.out.println("Score: " + score);
+        System.out.println("Grade: " + grade);
+
+        // 2. switch statement to print feedback based on the grade
+        switch (grade) {
+            case 'A':
+                System.out.println("Feedback: Excellent work!");
+                break;
+            case 'B':
+                System.out.println("Feedback: Great job!");
+                break;
+            case 'C':
+                System.out.println("Feedback: Good effort, keep practicing.");
+                break;
+            default:
+                System.out.println("Feedback: Needs improvement.");
+                break;
+        }
+    }
+}
