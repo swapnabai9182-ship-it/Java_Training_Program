@@ -1,0 +1,21 @@
+public class TypeCastingDemo {
+    public static void main(String[] args) {
+        // 1. Widening Casting (Automatic / Implicit)
+        // Converting a smaller type to a larger type size: int -> double
+        int myInt = 15;
+        double myDouble = myInt; 
+
+        System.out.println("--- Widening Casting ---");
+        System.out.println("Original int: " + myInt);
+        System.out.println("Converted double: " + myDouble);
+
+        // 2. Narrowing Casting (Manual / Explicit)
+        // Converting a larger type to a smaller type size: double -> int
+        double price = 99.95;
+        int roundedPrice = (int) price; // Must place (int) in parentheses
+
+        System.out.println("\n--- Narrowing Casting ---");
+        System.out.println("Original double: " + price);
+        System.out.println("Converted int: " + roundedPrice);
+    }
+}
